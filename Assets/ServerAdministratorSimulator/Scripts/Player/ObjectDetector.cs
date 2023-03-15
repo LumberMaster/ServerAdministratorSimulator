@@ -12,7 +12,7 @@ namespace ServerAdministratorSimulator.Player
 	{
 		[SerializeField] private GameObject cameraTarget;
 		[SerializeField] private Collider lastCollider;
-
+		[SerializeField] private LayerMask layerMask;
 		private void Start() 
 		{
 			cameraTarget = PlayerController.Instance.cameraTarget;
@@ -26,7 +26,7 @@ namespace ServerAdministratorSimulator.Player
 				PlayerGUI.Instance.UpdateObjectHelperText("");
 				lastCollider = null;
 			}
-			if (Physics.Raycast(cameraTarget.transform.position, direct, out RaycastHit hit, 3f))
+			if (Physics.Raycast(cameraTarget.transform.position, direct, out RaycastHit hit, 3f, layerMask))
 			{
 
 				IVisualizable iVisualizable = hit.collider.GetComponent<IVisualizable>();

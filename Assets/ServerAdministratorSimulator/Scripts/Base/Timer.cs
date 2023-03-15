@@ -42,6 +42,13 @@ namespace ServerAdministratorSimulator.Base
 			}
 		}
 
+		public float TimeUpdateIntensivity 
+		{ 
+			get => timeUpdateIntensivity;
+			set => timeUpdateIntensivity = value; 
+		
+		}
+
 		[SerializeField] private float timeUpdateIntensivity;
 
 		[SerializeField] private TMP_Text timeOut;
@@ -80,7 +87,7 @@ namespace ServerAdministratorSimulator.Base
 		{
 			OnUpdate.Invoke(time);
 			time += timeUpdateIntensivity;
-			timeOut.text = GetTimeByString();
+			if(timeOut) timeOut.text = GetTimeByString();
 
 		}
 
@@ -92,7 +99,7 @@ namespace ServerAdministratorSimulator.Base
 
 		private IEnumerator TimerUpdater()
 		{
-			if (isActive)
+			if (IsActive)
 			{
 				TimeUpdate();
 				yield return new WaitForSeconds(timeUpdateIntensivity);

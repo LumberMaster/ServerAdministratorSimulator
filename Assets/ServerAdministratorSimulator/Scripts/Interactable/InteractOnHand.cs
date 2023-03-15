@@ -13,13 +13,18 @@ namespace ServerAdministratorSimulator.Interactable
 	{
 		[Header("InteractInHand")]
 		[SerializeField] public KeyCode interactKey = KeyCode.Mouse1;
-		[SerializeField] public UnityEvent OnInteractInHand = new UnityEvent();
+		[SerializeField] public UnityEvent OnUseInHand = new UnityEvent();
 		[SerializeField] public string descriptionInHand;
 		public override void Interact()
 		{
 			base.Interact();
-			
 			PlayerGUI.Instance.UpdateObjectInHandHelperText(descriptionInHand + "\n[Q] Выбросить из руки");
+		}
+
+		public void Use() 
+		{
+			OnUseInHand.Invoke();
+
 		}
 	}
 }

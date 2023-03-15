@@ -132,7 +132,7 @@ namespace ServerAdministratorSimulator.Player
 				InteractOnHand interactOnHand = objectInLeftHand.GetComponent<InteractOnHand>();
 				if (interactOnHand)
 				{
-					if (Input.GetKeyDown(interactOnHand.interactKey)) interactOnHand.OnInteractInHand.Invoke();
+					if (Input.GetKeyDown(interactOnHand.interactKey)) interactOnHand.Use();
 					if (Input.GetKeyDown(KeyCode.Q)) ToRelease(Hands.Left);
 				}
 			}
@@ -142,7 +142,7 @@ namespace ServerAdministratorSimulator.Player
 				InteractOnHand interactOnHand = objectInRightHand.GetComponent<InteractOnHand>();
 				if (interactOnHand)
 				{
-					if (Input.GetKeyDown(interactOnHand.interactKey)) interactOnHand.OnInteractInHand.Invoke();
+					if (Input.GetKeyDown(interactOnHand.interactKey)) interactOnHand.Use();
 					if (Input.GetKeyDown(KeyCode.Q)) ToRelease(Hands.Right);
 				}
 			}
