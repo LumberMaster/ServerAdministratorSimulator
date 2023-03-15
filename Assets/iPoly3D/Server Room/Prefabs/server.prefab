@@ -490,7 +490,7 @@ MonoBehaviour:
   isVisualization: 0
   source: {fileID: 0}
   audioClipInteract: {fileID: 0}
-  description: "[\u041F\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+  description: "[\u041B\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
     \u0443\u0437\u0435\u043B"
 --- !u!114 &7225266087722073816
 MonoBehaviour:
@@ -646,7 +646,7 @@ MonoBehaviour:
   isVisualization: 0
   source: {fileID: 0}
   audioClipInteract: {fileID: 0}
-  description: "[\u041F\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+  description: "[\u041B\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
     \u0443\u0437\u0435\u043B"
 --- !u!114 &1789806118447688807
 MonoBehaviour:
@@ -802,7 +802,7 @@ MonoBehaviour:
   isVisualization: 0
   source: {fileID: 0}
   audioClipInteract: {fileID: 0}
-  description: "[\u041F\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+  description: "[\u041B\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
     \u0443\u0437\u0435\u043B"
 --- !u!114 &1698228813309985434
 MonoBehaviour:
@@ -958,7 +958,7 @@ MonoBehaviour:
   isVisualization: 0
   source: {fileID: 0}
   audioClipInteract: {fileID: 0}
-  description: "[\u041F\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+  description: "[\u041B\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
     \u0443\u0437\u0435\u043B"
 --- !u!114 &1152949643809812498
 MonoBehaviour:
@@ -1230,7 +1230,7 @@ MonoBehaviour:
   isVisualization: 0
   source: {fileID: 0}
   audioClipInteract: {fileID: 0}
-  description: "[\u041F\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+  description: "[\u041B\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
     \u0443\u0437\u0435\u043B"
 --- !u!114 &160250580180341176
 MonoBehaviour:
@@ -1618,7 +1618,7 @@ MonoBehaviour:
   isVisualization: 0
   source: {fileID: 0}
   audioClipInteract: {fileID: 0}
-  description: "[\u041F\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
+  description: "[\u041B\u041A\u041C] \u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
     \u0443\u0437\u0435\u043B"
 --- !u!114 &9176508390679137646
 MonoBehaviour:
@@ -2407,7 +2407,7 @@ MonoBehaviour:
   isVisualization: 0
   source: {fileID: 1125484976491963646}
   audioClipInteract: {fileID: 8300000, guid: ddb1ff5bdb908ff4bb1c8215d96b3ac4, type: 3}
-  description: "[\u041F\u041A\u041C] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+  description: "[\u041B\u041A\u041C] \u041E\u0442\u043A\u0440\u044B\u0442\u044C/\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
   animator: {fileID: 1150453481417341293}
   currentAnimation: 0
   animations:
