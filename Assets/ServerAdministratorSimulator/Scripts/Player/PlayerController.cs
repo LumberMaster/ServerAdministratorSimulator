@@ -67,6 +67,7 @@ namespace ServerAdministratorSimulator.Player
 
 
 		[SerializeField] private GameObject pauseMenu;
+		[SerializeField] private Camera _camera;
 
 		[Header("Keys")]
 		[SerializeField] private KeyCode keyCodeWalkForward = KeyCode.W;
@@ -120,7 +121,10 @@ namespace ServerAdministratorSimulator.Player
 			if (!isFixedLook)
 			{
 				transform.localRotation = Quaternion.AngleAxis(transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity, Vector3.up);
-				Camera.main.transform.localRotation = Quaternion.AngleAxis(Camera.main.transform.localEulerAngles.x + (-Input.GetAxis("Mouse Y")) * mouseSensitivity, Vector3.right);
+				//Debug.Log(Quaternion.AngleAxis(Camera.main.transform.localEulerAngles.x + (-Input.GetAxis("Mouse Y")) * mouseSensitivity, Vector3.right));
+				//_camera.transform.localRotation = Quaternion.AngleAxis(_camera.transform.localEulerAngles.x + (-Input.GetAxis("Mouse Y")) * mouseSensitivity, Vector3.right);
+				_camera.transform.localRotation = Quaternion.AngleAxis(_camera.transform.localEulerAngles.x + (-Input.GetAxis("Mouse Y")) * mouseSensitivity, Vector3.right);
+			
 			}
 
 			if (Input.GetKeyDown(keyCodePauseMenu)) PauseMenu();
